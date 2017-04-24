@@ -7,6 +7,7 @@ class Welcome extends React.Component {
     return (
       <main>
         <h1>Welcome!</h1>
+        <p>You’re in.</p>
       </main>
     );
   }

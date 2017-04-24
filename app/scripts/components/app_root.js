@@ -8,8 +8,8 @@ class AppRoot extends React.Component {
       <main>
         <h1>Bring the Band!</h1>
         <p>Hey. Thank you for visiting our webpage.</p>
-        <Link to="/login">Please login.</Link>
-        <Link to="/signup">New User? Please sign up!</Link>
+        <Link className="link-button" to="/login">Please login.</Link>
+        <Link className="link-button" to="/signup">New User? Please sign up!</Link>
       </main>
     );
   }

@@ -42,19 +42,55 @@ main {
     color: $neutral-color;
     border: 1px solid $neutral-color;
     border-radius: 4px;
+  } //a
+  .link-button:hover {
+    color: $dark-color;
+    background-color: $accent-color;
+    border: $accent-color;
+    box-sizing: border-box;
   }
+  input {
+    background: $dark-color;
+    border: 2px solid $light-color;
+    border-radius: 4px;
+    color: $light-color;
+    font-family: $body-font;
+    font-size: 3vh;
+    padding: 1vh 2vw;
+    margin: 1vh 2vw;
+    box-sizing: border-box;
+  } //input
+  form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    .text-input {
+      width: 48vw;
+    }
+    .submit-input:hover {
+      color: $dark-color;
+      background-color: $accent-color;
+      border: $accent-color;
+      box-sizing: border-box;
+    }
+  } //form
 } //main
 
 @media (max-width: 500px) {
   main {
     h1 {
       font-size: 8vw;
-    }
+    } // h1
     p {
       font-size: 4vw;
-    }
+    } // p
     a {
       font-size: 3vw;
-    }
-  }
-}
+    } // a
+  } // main
+} // @media
