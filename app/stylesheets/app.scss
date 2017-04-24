@@ -1,14 +1,14 @@
 $header-font: 'Rock Salt', cursive;
 $body-font: 'Neucha', cursive;
 $neutral-color: #dddfd4;
-$accent-color: #fae596;
-$light-color: #3fb0ac;
-$dark-color: #173e43;
+$accent-color: #F8EBBC;
+$light-color: #92FFFB;
+$dark-color: #173343;
 
 html {
 } // html
 main {
-  background: $light-color;
+  background: $dark-color;
   font-family: $body-font;
   display: -webkit-flex;
   display: flex;
@@ -29,7 +29,7 @@ main {
     font-size: 6vh;
   } //h1
   p {
-    color: $dark-color;
+    color: $light-color;
     margin: 1vh 1vw;
     padding: 1vh 1vw;
     font-size: 3vh;
