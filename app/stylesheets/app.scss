@@ -1,9 +1,15 @@
+$header-font: 'Rock Salt', cursive;
+$body-font: 'Neucha', cursive;
+$neutral-color: #dddfd4;
+$accent-color: #fae596;
+$light-color: #3fb0ac;
+$dark-color: #173e43;
+
 html {
-  background: #fafafa;
 } // html
 main {
-  background: #fafafa;
-  font-family: 'Neucha', cursive;
+  background: $light-color;
+  font-family: $body-font;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -16,11 +22,13 @@ main {
   padding: 0;
   height: 100vh;
   h1 {
-    font-family: 'Rock Salt', cursive;
+    font-family: $header-font;
+    color: $accent-color;
     margin: 1vh auto;
     padding: 0;
   } //h1
   p {
+    color: $dark-color;
     margin: 1vh auto;
     padding: 0;
   } //p
