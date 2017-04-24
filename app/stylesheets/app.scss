@@ -24,12 +24,25 @@ main {
   h1 {
     font-family: $header-font;
     color: $accent-color;
-    margin: 1vh auto;
-    padding: 0;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    font-size: 6vh;
   } //h1
   p {
     color: $dark-color;
-    margin: 1vh auto;
-    padding: 0;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    font-size: 3vh;
   } //p
 } //main
+
+@media (max-width: 460px) {
+  main {
+    h1 {
+      font-size: 8vw;
+    }
+    p {
+      font-size: 4vw;
+    }
+  }
+}
