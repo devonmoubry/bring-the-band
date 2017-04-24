@@ -7,7 +7,7 @@ $dark-color: #173343;
 
 html {
   background: $neutral-color;
-} // html
+} //html
 main {
   background: $dark-color;
   font-family: $body-font;
@@ -46,7 +46,7 @@ main {
   .link-button:hover {
     color: $dark-color;
     background-color: $accent-color;
-    border: $accent-color;
+    border: 1px solid $accent-color;
     box-sizing: border-box;
   }
   input {
@@ -58,7 +58,6 @@ main {
     font-size: 3vh;
     padding: 1vh 2vw;
     margin: 1vh 2vw;
-    box-sizing: border-box;
   } //input
   form {
     display: -webkit-flex;
@@ -71,13 +70,13 @@ main {
     justify-content: center;
     .text-input {
       width: 48vw;
-    }
+    } //form
     .submit-input:hover {
       color: $dark-color;
-      background-color: $accent-color;
-      border: $accent-color;
+      background-color: $light-color;
+      border: 2px solid $light-color;
       box-sizing: border-box;
-    }
+    } //submit-input:hover
   } //form
 } //main
 
@@ -85,12 +84,12 @@ main {
   main {
     h1 {
       font-size: 8vw;
-    } // h1
+    } //h1
     p {
       font-size: 4vw;
-    } // p
+    } //p
     a {
       font-size: 3vw;
-    } // a
-  } // main
-} // @media
+    } //a
+  } //main
+} //@media
