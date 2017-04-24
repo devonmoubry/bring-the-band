@@ -6,11 +6,11 @@ main {
   font-family: 'Neucha', cursive;
   display: -webkit-flex;
   display: flex;
-  webkit-flex-direction: column;
+  -webkit-flex-direction: column;
   flex-direction: column;
   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin: 0;
   padding: 0;
