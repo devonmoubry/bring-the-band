@@ -7,7 +7,9 @@ class AppRoot extends React.Component {
     return (
       <main>
         <h1>Bring the Band!</h1>
-        <p>Thank you for visiting our webpage. Please come again.</p>
+        <p>Hey. Thank you for visiting our webpage.</p>
+        <Link to="/login">Please login.</Link>
+        <Link to="/signup">New User? Please sign up!</Link>
       </main>
     );
   }

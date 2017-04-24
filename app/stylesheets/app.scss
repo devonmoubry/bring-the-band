@@ -6,6 +6,7 @@ $light-color: #92FFFB;
 $dark-color: #173343;
 
 html {
+  background: $neutral-color;
 } // html
 main {
   background: $dark-color;
@@ -20,7 +21,7 @@ main {
   justify-content: center;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 80vh;
   h1 {
     font-family: $header-font;
     color: $accent-color;
@@ -34,6 +35,14 @@ main {
     padding: 1vh 1vw;
     font-size: 3vh;
   } //p
+  a {
+    text-decoration: none;
+    margin: 1vw;
+    padding: 1vw;
+    color: $neutral-color;
+    border: 1px solid $neutral-color;
+    border-radius: 4px;
+  }
 } //main
 
 @media (max-width: 500px) {
@@ -43,6 +52,9 @@ main {
     }
     p {
       font-size: 4vw;
+    }
+    a {
+      font-size: 3vw;
     }
   }
 }
