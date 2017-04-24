@@ -1,0 +1,27 @@
+html {
+  background: #fafafa;
+} // html
+main {
+  background: #fafafa;
+  font-family: 'Neucha', cursive;
+  display: -webkit-flex;
+  display: flex;
+  webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  h1 {
+    font-family: 'Rock Salt', cursive;
+    margin: 1vh auto;
+    padding: 0;
+  } //h1
+  p {
+    margin: 1vh auto;
+    padding: 0;
+  } //p
+} //main
