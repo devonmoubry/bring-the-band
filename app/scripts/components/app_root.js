@@ -6,7 +6,7 @@ class AppRoot extends React.Component {
   render() {
     return (
       <main>
-        <h1>Bring the Band!</h1>
+        <h1>LIBERTY LUNCH</h1>
         <p>Hey. Thank you for visiting our webpage.</p>
         <Link className="link-button" to="/login">Please login.</Link>
         <Link className="link-button" to="/signup">New User? Please sign up!</Link>
