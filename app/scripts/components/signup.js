@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, Link, NavLink } from "react-router-dom";
-import container from "../containers/all.js"
+import container from "../containers/all.js";
 //actions
-import signupNewUser from "../actions/signup_new_user.js"
+import signupNewUser from "../actions/signup_new_user.js";
 
 class Signup extends React.Component {
   constructor(props) {

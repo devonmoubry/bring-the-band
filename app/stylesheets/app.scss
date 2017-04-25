@@ -68,16 +68,16 @@ main {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    .text-input {
-      width: 48vw;
-    } //form
-    .submit-input:hover {
-      color: $dark-color;
-      background-color: $light-color;
-      border: 2px solid $light-color;
-      box-sizing: border-box;
-    } //submit-input:hover
   } //form
+  .text-input {
+    width: 48vw;
+  } //text-input
+  .submit-input:hover {
+    color: $dark-color;
+    background-color: $light-color;
+    border: 2px solid $light-color;
+    box-sizing: border-box;
+  } //submit-input:hover
 } //main
 
 @media (max-width: 500px) {

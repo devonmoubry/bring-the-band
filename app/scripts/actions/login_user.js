@@ -1,6 +1,5 @@
 export default function loginUser (loginEmail, loginPassword) {
   return (dispatch) => {
-    dispatch({ type: "LOGIN_USER"});
     return $.ajax({
       type: "POST",
       url: "https://api.backendless.com/v1/users/login",

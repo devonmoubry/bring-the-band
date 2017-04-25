@@ -1,6 +1,5 @@
 export default function signupNewUser (signupFullName, signupEmail, signupPassword) {
   return (dispatch) => {
-    dispatch({ type: "SIGNUP_NEW_USER" });
     return $.ajax({
       type: "POST",
       url: "https://api.backendless.com/v1/users/register",
