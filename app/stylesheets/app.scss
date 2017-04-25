@@ -49,16 +49,15 @@ main {
     border: 1px solid $accent-color;
     box-sizing: border-box;
   } //linkbutton:hover
-  input {
+  .submit-input {
     background: $dark-color;
     border: 2px solid $light-color;
-    border-radius: 4px;
     color: $light-color;
     font-family: $body-font;
     font-size: 3vh;
     padding: 1vh 2vw;
     margin: 1vh 2vw;
-  } //input
+  } //submit-input
   form {
     display: -webkit-flex;
     display: flex;
@@ -70,6 +69,14 @@ main {
     justify-content: center;
   } //form
   .text-input {
+    background: $dark-color;
+    color: $light-color;
+    font-family: $body-font;
+    font-size: 3vh;
+    padding: 1vh 2vw;
+    margin: 1vh 2vw;
+    border: none;
+    border-bottom: 2px solid $light-color;
     width: 48vw;
   } //text-input
   .submit-input:hover {
