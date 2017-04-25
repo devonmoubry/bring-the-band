@@ -21,9 +21,11 @@ class Search extends React.Component {
   render() {
     return (
       <main>
-        <h1>Search</h1>
-        <input className="text-input" type="text" ref="inputSearch" placeholder="ARTIST" defaultValue="My Pretty Pony"></input>
-        <input onClick={this.handleSearch} className="submit-input" type="submit" value="SEARCH"></input>
+        <div className="search-container">
+          <h1>Search</h1>
+          <input className="text-input" type="text" ref="inputSearch" placeholder="ARTIST" defaultValue="Jukebox the Ghost"></input>
+          <input onClick={this.handleSearch} className="submit-input" type="submit" value="SEARCH"></input>
+        </div>
       </main>
     );
   }
