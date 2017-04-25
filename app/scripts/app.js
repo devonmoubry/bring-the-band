@@ -10,6 +10,7 @@ import Signup from "./components/signup.js";
 import Welcome from "./components/welcome.js";
 import Votes from "./components/votes.js";
 import Search from "./components/search.js";
+//actions
 
 export default function app() {
   render(
