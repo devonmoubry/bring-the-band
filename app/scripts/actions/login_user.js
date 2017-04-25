@@ -1,9 +1,9 @@
-export default function signupNewUser (signupFullName, signupEmail, signupPassword) {
+export default function loginUser (loginEmail, loginPassword) {
   return (dispatch) => {
-    dispatch({ type: "SIGNUP_NEW_USER" });
+    dispatch({ type: "LOGIN_USER"});
     return $.ajax({
       type: "POST",
-      url: "https://api.backendless.com/v1/users/register",
+      url: "https://api.backendless.com/v1/users/login",
       headers: {
         "application-id": "24B65924-C870-5359-FF6E-4A5396B35700",
         "secret-key": "BFBB0F72-782B-9CF9-FF71-D0C15271A900",
@@ -11,13 +11,14 @@ export default function signupNewUser (signupFullName, signupEmail, signupPasswo
         "Content-Type": "application/json"
       },
       data: JSON.stringify({
-        "name": signupFullName,
-        "email": signupEmail,
-        "password": signupPassword
+        "login": loginEmail,
+        "password": loginPassword
       }),
       success: (data, status, xhr) => {
-
-      }
-    })
+        var usertoken = data["user-token"];
+        var name = data["name"];
+        var objectId = data["objectId"];
+      },
+    });
   }
 }

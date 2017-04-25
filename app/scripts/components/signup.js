@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Route, Link, NavLink } from "react-router-dom";
 import container from "../containers/all.js"
-
+//actions
 import signupNewUser from "../actions/signup_new_user.js"
 
 class Signup extends React.Component {
@@ -15,12 +15,8 @@ class Signup extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     const signupFullName = this.refs.signupFullName.value;
-    const signupEmail = this.refs.signupEmail.value
-    const signupPassword = this.refs.signupPassword.value
-    console.log('button click');
-    console.log('firstName', signupFullName);
-    console.log('email', signupEmail);
-    console.log('password', signupPassword);
+    const signupEmail = this.refs.signupEmail.value;
+    const signupPassword = this.refs.signupPassword.value;
     this.props.dispatch(signupNewUser(signupFullName, signupEmail, signupPassword));
   }
 
@@ -29,9 +25,9 @@ class Signup extends React.Component {
       <main>
         <h1>Sign up</h1>
         <form id="signup">
-          <input className="text-input" type="text" ref="signupFullName" placeholder="FULL NAME" defaultValue="Connor"></input>
-          <input className="text-input" type="text" ref="signupEmail" placeholder="VALID EMAIL" defaultValue="connor@example.com"></input>
-          <input className="text-input" type="password" ref="signupPassword" placeholder="CREATE PASSWORD" defaultValue="password"></input>
+          <input className="text-input" type="text" ref="signupFullName" placeholder="FULL NAME"></input>
+          <input className="text-input" type="text" ref="signupEmail" placeholder="VALID EMAIL"></input>
+          <input className="text-input" type="password" ref="signupPassword" placeholder="CREATE PASSWORD"></input>
           <input onClick={this.handleSubmit} className="submit-input" type="submit" value="SIGNUP"></input>
         </form>
       </main>

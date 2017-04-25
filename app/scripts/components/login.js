@@ -1,20 +1,36 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, Link, NavLink } from "react-router-dom";
+import container from "../containers/all.js"
+//actions
+import loginUser from "../actions/login_user.js"
 
 class Login extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.handleLogin = this.handleLogin.bind(this)
+  }
+
+  handleLogin(event) {
+    event.preventDefault();
+    const loginEmail = this.refs.loginEmail.value;
+    const loginPassword = this.refs.loginPassword.value;
+    this.props.dispatch(loginUser(loginEmail, loginPassword));
+  }
+
   render() {
     return (
       <main className="login-container">
         <h1>Login</h1>
         <form id="user-login-form" className="login-form-container">
-          <input className="text-input" type="text" id="login-username" placeholder="@example.com" value="connor@example.com"></input>
-          <input className="text-input" type="password" id="login-password" placeholder="password" value="password"></input>
-          <input className="submit-input" type="submit" value="LOGIN"></input>
+          <input className="text-input" type="text" ref="loginEmail" placeholder="@example.com" defaultValue="connor@example.com"></input>
+          <input className="text-input" type="password" ref="loginPassword" placeholder="password" defaultValue="password"></input>
+          <input onClick={this.handleLogin} className="submit-input" type="submit" value="LOGIN"></input>
         </form>
       </main>
     );
   }
 }
 
-export default Login;
+export default connect(container.allState)(Login);
