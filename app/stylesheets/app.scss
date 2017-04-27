@@ -19,6 +19,11 @@ main {
   align-items: center;
   margin: 0;
   padding: 0;
+  .logged-in-navigation {
+    display: flex;
+    justify-content: flex-end;
+
+  }
   h1 {
     font-family: $header-font;
     color: $accent-color;

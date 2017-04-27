@@ -6,6 +6,7 @@ import container from "../containers/all.js";
 import searchArtists from "../actions/search_artists.js";
 //components
 import SearchResultsList from "./search_results_list.js"
+import NavBar from './nav_bar.js';
 
 class Search extends React.Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class Search extends React.Component {
     console.log(this.props.usertoken);
     return (
       <main>
+        <NavBar />
         <div className="search-container">
           <h1 tabIndex="0">Search</h1>
           <input className="text-input" type="text" ref="inputSearch" placeholder="ARTIST" defaultValue="jukebox the ghost" autoFocus ></input>

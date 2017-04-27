@@ -1,11 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, Link, NavLink } from "react-router-dom";
+import container from '../containers/all.js';
+// components
+import NavBar from './nav_bar.js';
 
 class Welcome extends React.Component {
   render() {
     return (
       <main>
+        <NavBar />
         <h1>Welcome to Liberty Lunch!</h1>
         <p>You’re in.</p>
         <p>Want a band to come play the venue? Vote now.</p>
@@ -17,4 +21,4 @@ class Welcome extends React.Component {
   }
 }
 
-export default Welcome;
+export default connect(container.allState)(Welcome);

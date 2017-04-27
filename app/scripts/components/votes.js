@@ -6,12 +6,14 @@ import container from "../containers/all.js";
 import getVotes from "../actions/get_votes.js";
 //components
 import VotesList from "./votes_list.js";
+import NavBar from './nav_bar.js';
 
 class Votes extends React.Component {
   render() {
     return (
       <main>
-          <VotesList />
+        <NavBar />
+        <VotesList />
       </main>
     );
   }
