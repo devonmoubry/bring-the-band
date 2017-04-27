@@ -10,10 +10,18 @@ class Login extends React.Component {
     super(props)
 
     this.handleLogin = this.handleLogin.bind(this)
+    this.goToWelcome = this.goToWelcome.bind(this)
+  }
+
+  goToWelcome(event) {
+    event.preventDefault();
+    console.log('gogogo');
+    this.props.history.push('/welcome');
   }
 
   handleLogin(event) {
     event.preventDefault();
+    console.log(event);
     const loginEmail = this.refs.loginEmail.value;
     const loginPassword = this.refs.loginPassword.value;
     this.props.dispatch(loginUser(loginEmail, loginPassword));

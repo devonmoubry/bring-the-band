@@ -4,6 +4,8 @@ import { Route, Link, NavLink } from "react-router-dom";
 import container from "../containers/all.js";
 //actions
 import searchArtists from "../actions/search_artists.js";
+//components
+import SearchResultsList from "./search_results_list.js"
 
 class Search extends React.Component {
   constructor(props) {
@@ -22,10 +24,11 @@ class Search extends React.Component {
     return (
       <main>
         <div className="search-container">
-          <h1>Search</h1>
-          <input className="text-input" type="text" ref="inputSearch" placeholder="ARTIST" defaultValue="Jukebox the Ghost"></input>
+          <h1 tabIndex="0">Search</h1>
+          <input className="text-input" type="text" ref="inputSearch" placeholder="ARTIST" defaultValue="jukebox the ghost" autoFocus ></input>
           <input onClick={this.handleSearch} className="submit-input" type="submit" value="SEARCH"></input>
         </div>
+        <SearchResultsList />
       </main>
     );
   }

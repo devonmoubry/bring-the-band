@@ -17,17 +17,15 @@ main {
   flex-direction: column;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
   margin: 0;
   padding: 0;
-  height: 80vh;
   h1 {
     font-family: $header-font;
     color: $accent-color;
     margin: 1vh 1vw;
     padding: 1vh 1vw;
-    font-size: 6vh;
+    font-size: 4.5vw;
+    align-content: center;
   } //h1
   p {
     color: $light-color;
@@ -85,12 +83,49 @@ main {
     border: 2px solid $light-color;
     box-sizing: border-box;
   } //submit-input:hover
+  .results-div {
+    margin-top: 4vh;
+    -webkit-display: flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    h1 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  } //ul
+  li.search-result {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    list-style: none;
+    color: $light-color;
+    font-size: 3vh;
+  }
+  img {
+    max-height: 200px;
+  }
 } //main
 
 @media (max-width: 500px) {
   main {
     h1 {
-      font-size: 8vw;
+      font-size: 5vw;
     } //h1
     p {
       font-size: 4vw;

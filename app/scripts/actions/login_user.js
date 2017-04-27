@@ -14,9 +14,7 @@ export default function loginUser (loginEmail, loginPassword) {
         "password": loginPassword
       }),
       success: (data, status, xhr) => {
-        var usertoken = data["user-token"];
-        var name = data["name"];
-        var objectId = data["objectId"];
+        console.log(data);
       },
     });
   }
