@@ -10,13 +10,6 @@ class Login extends React.Component {
     super(props)
 
     this.handleLogin = this.handleLogin.bind(this)
-    this.goToWelcome = this.goToWelcome.bind(this)
-  }
-
-  goToWelcome(event) {
-    event.preventDefault();
-    console.log('gogogo');
-
   }
 
   handleLogin(history) {
