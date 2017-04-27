@@ -10,16 +10,19 @@ export default function AppReducer(state, action) {
 
   switch(action.type) {
     case "LOADED_RESULTS":
-    console.log('LOADED_RESULTS');
+      console.log('LOADED_RESULTS');
       var newState = {
-        searchResults: action.artists,
-        usertoken: action.usertoken
+        searchResults: action.artists
       };
       return Object.assign({}, state, newState);
 
     case "LOGGED_IN":
       console.log("LOGGED_IN");
-      return state;
+      console.log("action.usertoken", action.usertoken);
+      var newState = {
+        usertoken: action.usertoken
+      }
+      return Object.assign({}, state, newState);
   }
 
   console.log("Unhandled State!");

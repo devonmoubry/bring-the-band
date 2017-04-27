@@ -26,7 +26,8 @@ class SearchResult extends React.Component {
     const id = this.props.artist.id;
     const name = this.props.artist.name;
     const image = this.props.artist.images;
-    this.props.dispatch(saveVote(id, name, image));
+    const usertoken = this.props.usertoken;
+    this.props.dispatch(saveVote(id, name, image, usertoken));
   }
 
   render() {

@@ -16,15 +16,17 @@ class Login extends React.Component {
   goToWelcome(event) {
     event.preventDefault();
     console.log('gogogo');
-    this.props.history.push('/welcome');
+
   }
 
-  handleLogin(event) {
+  handleLogin(history) {
     event.preventDefault();
     console.log(event);
+    console.log('history', history);
     const loginEmail = this.refs.loginEmail.value;
     const loginPassword = this.refs.loginPassword.value;
     this.props.dispatch(loginUser(loginEmail, loginPassword));
+    this.props.history.push('/welcome');
   }
 
   render() {

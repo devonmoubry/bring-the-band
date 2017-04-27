@@ -21,6 +21,7 @@ class Search extends React.Component {
   }
 
   render() {
+    console.log(this.props.usertoken);
     return (
       <main>
         <div className="search-container">

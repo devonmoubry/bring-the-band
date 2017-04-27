@@ -14,7 +14,8 @@ export default function loginUser (loginEmail, loginPassword) {
         "password": loginPassword
       }),
       success: (data, status, xhr) => {
-        console.log(data);
+        console.log(data["user-token"]);
+        dispatch ({ type: "LOGGED_IN", usertoken: data["user-token"], name: data.name })
       },
     });
   }
