@@ -11,6 +11,4 @@ Once logged in, users can search and vote for bands.
 When the user votes for a band, the data is saved in a Backendless table.
 This app uses the Spotify api for band data.
 
-Live version
-------------
-thankful-basin.surge.sh
+[Live Version](thankful-basin.surge.sh)
