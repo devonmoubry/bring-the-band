@@ -30,6 +30,7 @@ class Search extends React.Component {
           <h1 tabIndex="0">Search</h1>
           <input className="text-input" type="text" ref="inputSearch" placeholder="ARTIST" defaultValue="jukebox the ghost" autoFocus ></input>
           <input onClick={this.handleSearch} className="submit-input" type="submit" value="SEARCH"></input>
+          <p>Oh, my! Spotify has made some changes. Please check back after the code has been updated.</p>
         </div>
         <SearchResultsList />
       </main>
