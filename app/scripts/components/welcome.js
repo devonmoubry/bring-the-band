@@ -8,7 +8,7 @@ import NavBar from './nav_bar.js';
 class Welcome extends React.Component {
   render() {
     return (
-      <main>
+      <main className="welcome-view">
         <NavBar />
         <h1>Welcome to Liberty Lunch!</h1>
         <p>You’re in.</p>
